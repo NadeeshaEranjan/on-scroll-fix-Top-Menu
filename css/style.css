@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+
+html, body {
+  background-color: #EEE;
+  font-size: 16px;
+}
+#guide-template #intro-container {
+  height: 181px;
+  width: 100%;
+  background-size: cover;
+  background-color: #000;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+#guide-template #nav-bar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 50px;
+// }
+// #guide-template.fixed #nav-bar { 
+//   position: fixed;
+//   z-index: 99;
+// }
+// #guide-template.fixed #main {
+//   position: relative;
+//   top: 50px;
+// }
+// #guide-template #content {
+//   border-left: 1px solid #EEE;
+//   padding-bottom: 25px;
+// }
+// #guide-template #sidebar { padding: 0px;}
+#guide-template #affix {
+  position: relative;
+  top: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#guide-template.fixed #affix { 
+  position: fixed;
+  z-index: 99;
+  width: 20.5%;
+  top: 50px;
+  height: 100%;
+}
+@media (max-width: 996px) {
+  #sidebar {display: none;}
+}
